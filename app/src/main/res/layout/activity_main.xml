@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtnamamahasiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Muhamad Fadhel"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/txttitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtnamamahasiswa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Pemesanan Tiket Pesawat"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbl1"
+        android:layout_below="@id/txttitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp">
+        <TableRow>
+            <TextView
+                android:id="@+id/txtkotaasal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kota Asal : "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinkotaasal"
+                />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtkotatujuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kota Tujuan : "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+            <Spinner
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:id="@+id/spinkotatujuan"
+                />
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/txtberangkat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbl1"
+        android:layout_marginTop="20dp"
+        android:text="Berangkat : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        />
+
+    <DatePicker
+        android:id="@+id/dateberangkat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtberangkat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:datePickerMode="spinner"/>
+
+    <TextView
+        android:id="@+id/txtjumlahpenumpang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dateberangkat"
+        android:layout_marginStart="20dp"
+        android:text="Jumlah Penumpang : "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbl2"
+        android:layout_below="@id/txtjumlahpenumpang"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkdewasa"
+                android:text="Dewasa"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editdewasa"
+                android:layout_marginStart="10dp"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkanak"
+                android:text="Anak"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editanak"
+                android:layout_marginStart="10dp"/>
+        </TableRow>
+        <TableRow>
+            <CheckBox
+                android:id="@+id/chkbayi"
+                android:text="Bayi"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editbayi"
+                android:layout_marginStart="10dp"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+        android:id="@+id/txtkelaspenerbangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tbl2"
+        android:layout_marginStart="20dp"
+        android:text="Kelas Penerbangan : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:id="@+id/rgkelaspenerbangan"
+        android:layout_below="@+id/txtkelaspenerbangan"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ekonomi"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bisnis"
+            />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Utama"
+            />
+
+    </RadioGroup>
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tbl3"
+        android:layout_below="@id/rgkelaspenerbangan"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+        <TableRow>
+            <TextView
+                android:id="@+id/txtdatapemesanan"
+                android:text="Data Pemesan"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editnamapemesan"
+                android:layout_marginStart="10dp"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txtnotelp"
+                android:text="No Telepon"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/editnotelp"
+                android:layout_marginStart="10dp"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txthargatiketdewasa"
+                android:text="Harga Tiket Dewasa"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edithargatiketdewasa"
+                android:layout_marginStart="10dp"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txthargatiketanak"
+                android:text="Harga Tiket Anak"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edithargatiketanak"
+                android:layout_marginStart="10dp"/>
+
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:id="@+id/txthargatiketbayi"
+                android:text="Harga Tiket Bayi"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/edithargatiketbayi"
+                android:layout_marginStart="10dp"/>
+
+        </TableRow>
+    </TableLayout>
+<Button
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:text="PESAN"
+    android:layout_below="@id/tbl3"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="20dp"
+    android:id="@+id/btnpesan"
+    />
+
+</RelativeLayout>
+</ScrollView>

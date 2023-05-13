@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+    <TextView
+        android:id="@+id/outkotaasal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kota Asal : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/outkotatujuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kota Tujuan : "
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/outkotaasal"
+        />
+
+    <TextView
+        android:id="@+id/outberangkat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outkotatujuan"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Berangkat  : "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/outjumlahpenumpang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outberangkat"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Jumlah Penumpang  : "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/outkelaspenerbangan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outjumlahpenumpang"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Kelas Penerbangan  : "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/outnamapemesan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outkelaspenerbangan"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Nama Pemesan  : "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/outnotelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outnamapemesan"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="No Telp  : "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/outhargatiketdewasa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outnotelp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Harga Tiket Dewasa  : "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/outhargatiketanak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outhargatiketdewasa"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Harga Tiket Anak  : "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/outhargatiketbayi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/outhargatiketanak"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Harga Tiket Bayi  : "
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+</RelativeLayout>
